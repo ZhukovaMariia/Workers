@@ -21,7 +21,7 @@ namespace Worker
                 new GoodEmployee("Zuev", 52, 32000)
             };
 
-            var punktA = emp.OrderBy(a => a.GetSalary);
+            var punktA = emp.OrderByDescending (a => a.GetSalary).ThenBy(a=>a.Name);
             foreach (var e in punktA)
                 Console.WriteLine(e);
                     Console.Write(new string('*', 20));
@@ -31,7 +31,7 @@ namespace Worker
                 Console.WriteLine(e);
             Console.Write(new string('-', 20));
 
-            foreach (var e in punktA.Take(3))
+            foreach (var e in punktA.Reverse().Take(3))
                 Console.WriteLine(e.Name);
 
             var binary = new BinaryFormatter();
