@@ -1,1 +1,2 @@
 D:\GeekBrains\C#\Worker\Worker\bin\Debug\Worker.exe.config
+D:\GeekBrains\C#\Worker\Workers\Worker\bin\Debug\Worker.exe.config
